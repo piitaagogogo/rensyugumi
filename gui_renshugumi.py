@@ -28,7 +28,7 @@ def Clac_Menu(Attendfile,Needfile,Attendsheet,Needsheet,K,W,bikou,slack_check):
     K = int(K)
     W = int(W)    
 
-    slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url="https://hooks.slack.com/services/kot5e8tp/TE56PDFPC/B01UY9R9S9W/6oZVgFDBCaBXUdh98mOOa7Fz")
  
     if Needfile.find("xls")>1:
         df_N = pd.read_excel(Needfile,sheet_name=Needsheet, header=None).dropna(how="all",subset=[1,2]).dropna(how="all",axis=1).fillna(0)
